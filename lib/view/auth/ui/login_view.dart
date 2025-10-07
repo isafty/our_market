@@ -3,6 +3,7 @@ import 'package:new_app_1/core/function/navigator_to.dart';
 import 'package:new_app_1/core/widget/customtextbutton.dart';
 import 'package:new_app_1/core/widget/textformfield1.dart';
 import 'package:new_app_1/view/auth/ui/forget_view.dart';
+import 'package:new_app_1/view/auth/ui/signup_view.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -42,7 +43,12 @@ class LoginView extends StatelessWidget {
                 },
               ),
               SizedBox(width: 10),
-              CustomTextButton(textb: "Sign Up", onTap: () {}),
+              CustomTextButton(
+                textb: "Sign Up",
+                onTap: () {
+                  navigatorMethod(context, SignUpView());
+                },
+              ),
               SizedBox(width: 20),
             ],
           ),
