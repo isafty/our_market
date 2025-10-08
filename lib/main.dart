@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_app_1/view/auth/ui/login_view.dart';
+import 'package:new_app_1/view/home/ui/nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const LoginView(),
+      home: const NavBar(),
     );
   }
 }
